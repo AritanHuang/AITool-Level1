@@ -151,19 +151,24 @@ body {
     max-width: 1296px;
     margin: 50px auto;
 }
+.products {
+    justify-content: space-between;
+}
 .product-item {
     width: 31%;
     margin-right: 24px;
     margin-bottom: 24px;
     border: 1px solid #f2f2f2;
-    border-radius: 5% 5% 3% 3%;
+    border-radius: 16px;
     flex-direction: column;
+    overflow: hidden;
+    /* 避免圖片縮放超出空間 */
 }
 .product-pic {
     overflow: hidden;
 }
 .product-item img {
-    border-radius: 5% 5% 0 0;
+    border-radius: 16px 16px 0 0;
     transition: transform 0.3s ease;
 }
 .product-item img:hover {
@@ -193,6 +198,9 @@ body {
 .product-skill {
     justify-content: space-between;
     align-items: center;
+}
+.product-skill a {
+    color: #020202;
 }
 /* utilities */
 .d-flex {
